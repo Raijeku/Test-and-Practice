@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="raistudio.testandpractice.TestResultsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/element_spacing"
+                android:text="@string/result"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/result_text_view"
+                android:textSize="@dimen/normal_text_size"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/element_spacing"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/result_percent_view"
+                android:textSize="@dimen/title_text_size"
+                android:layout_below="@id/result_text_view"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/result_percent_view"
+                android:layout_marginTop="@dimen/element_spacing"
+                android:layout_marginLeft="@dimen/element_spacing"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/result_difficulty_view"
+                android:text="@string/result_difficulty"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/result_percent_view"
+                android:layout_marginTop="@dimen/element_spacing"
+                android:layout_marginRight="@dimen/element_spacing"
+                android:layout_alignParentRight="true"
+                android:id="@+id/result_difficulty_text_view" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/result_difficulty_view"
+                android:layout_marginTop="@dimen/element_spacing"
+                android:layout_marginLeft="@dimen/element_spacing"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/result_average_view"
+                android:text="@string/average_score"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/result_difficulty_view"
+                android:layout_marginTop="@dimen/element_spacing"
+                android:layout_marginRight="@dimen/element_spacing"
+                android:layout_alignParentRight="true"
+                android:id="@+id/result_average_text_view" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/result_average_view"
+                android:layout_marginTop="@dimen/element_spacing"
+                android:layout_marginLeft="@dimen/element_spacing"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/result_times_taken_view"
+                android:text="@string/times_taken"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/result_average_view"
+                android:layout_marginTop="@dimen/element_spacing"
+                android:layout_marginRight="@dimen/element_spacing"
+                android:id="@+id/result_times_taken_text_view"
+                android:layout_alignParentRight="true"/>
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pie_chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/result_times_taken_view"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:layout_below="@id/pie_chart"
+            android:id="@+id/result_record_recycler"
+            android:layout_marginTop="@dimen/element_spacing"
+            android:layout_alignParentLeft="true">
+
+        </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

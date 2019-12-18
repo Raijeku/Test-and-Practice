@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="raistudio.testandpractice.ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/profile_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/profile_image"
+        android:paddingTop="@dimen/element_spacing"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/profile_image_view"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/profile_username_view"
+        android:textSize="@dimen/title_text_size"
+        android:layout_marginTop="@dimen/element_spacing"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_username_view"
+        android:id="@+id/profile_email_text_view"
+        android:layout_marginTop="@dimen/element_spacing"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/ic_email_black_24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/profile_email_text_view"
+        android:layout_below="@id/profile_username_view"
+        android:id="@+id/profile_email_view"
+        android:textSize="@dimen/normal_text_size"
+        android:layout_marginTop="@dimen/element_spacing"
+        android:layout_marginLeft="5dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_email_text_view"
+        android:id="@+id/profile_password_text_view"
+        android:layout_marginTop="@dimen/element_spacing"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/ic_security_black_24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/profile_password_text_view"
+        android:layout_below="@id/profile_email_text_view"
+        android:id="@+id/profile_password_view"
+        android:textSize="@dimen/normal_text_size"
+        android:text="sjdinds"
+        android:layout_marginTop="@dimen/element_spacing"
+        android:inputType="textPassword"
+        android:layout_marginLeft="5dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_password_text_view"
+        android:text="@string/edit_profile"
+        android:layout_marginTop="@dimen/element_spacing"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/edit_profile_view"/>
+
+</RelativeLayout>

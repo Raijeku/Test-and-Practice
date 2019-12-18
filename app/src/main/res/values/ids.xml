@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="easy" type="id">Easy</item>
+    <item name="medium" type="id">Medium</item>
+    <item name="hard" type="id">Hard</item>
+</resources>

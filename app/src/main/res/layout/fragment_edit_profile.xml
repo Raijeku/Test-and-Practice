@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="raistudio.testandpractice.EditProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/edit_profile_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/profile_image"
+        android:paddingTop="@dimen/element_spacing"/>
+
+    <ImageView
+        android:id="@+id/edit_camera_image_view"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignRight="@id/edit_profile_image_view"
+        android:layout_alignBottom="@id/edit_profile_image_view"
+        android:src="@drawable/ic_menu_camera"
+        android:layout_marginRight="@dimen/element_spacing"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:hint="@string/username_login"
+        android:layout_below="@id/edit_profile_image_view"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/edit_profile_username_view"
+        android:textSize="@dimen/title_text_size"
+        android:paddingTop="@dimen/element_spacing"
+        android:layout_marginHorizontal="5dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm"
+        android:layout_below="@id/edit_profile_username_view"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/edit_confirm_view"
+        android:paddingTop="@dimen/element_spacing"
+        android:layout_marginHorizontal="5dp" />
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="raistudio.testandpractice.RankingFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/element_spacing"
+                android:text="@string/difficulty"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/ranking_difficulty_text_view"
+                android:textSize="@dimen/normal_text_size"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/element_spacing"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/ranking_difficulty_view"
+                android:textSize="@dimen/title_text_size"
+                android:layout_below="@id/ranking_difficulty_text_view"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ranking_difficulty_view"
+                android:id="@+id/ranking_average_text_view"
+                android:layout_marginTop="@dimen/element_spacing"
+                android:layout_marginLeft="@dimen/element_spacing"
+                android:layout_alignParentLeft="true"
+                android:text="@string/average_score"
+                android:textSize="@dimen/normal_text_size"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ranking_difficulty_view"
+                android:id="@+id/ranking_average_view"
+                android:layout_marginTop="@dimen/element_spacing"
+                android:layout_marginRight="@dimen/element_spacing"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/normal_text_size"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ranking_average_view"
+                android:id="@+id/ranking_amount_taken_text_view"
+                android:layout_marginTop="@dimen/element_spacing"
+                android:layout_marginLeft="@dimen/element_spacing"
+                android:layout_alignParentLeft="true"
+                android:textSize="@dimen/normal_text_size"
+                android:text="@string/times_taken"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ranking_average_view"
+                android:id="@+id/ranking_amount_taken_view"
+                android:layout_marginTop="@dimen/element_spacing"
+                android:layout_marginRight="@dimen/element_spacing"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/normal_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ranking_amount_taken_view"
+                android:id="@+id/ranking_rank_text_view"
+                android:layout_marginTop="@dimen/element_spacing"
+                android:layout_marginLeft="@dimen/element_spacing"
+                android:layout_alignParentLeft="true"
+                android:textSize="@dimen/normal_text_size"
+                android:text="@string/rank"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ranking_amount_taken_view"
+                android:id="@+id/ranking_rank_view"
+                android:layout_marginTop="@dimen/element_spacing"
+                android:layout_marginRight="@dimen/element_spacing"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/normal_text_size" />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                android:layout_below="@id/ranking_rank_view"
+                android:id="@+id/ranking_record_recycler"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="@dimen/element_spacing">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+</FrameLayout>

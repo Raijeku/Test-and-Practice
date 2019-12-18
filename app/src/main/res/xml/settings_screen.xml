@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/language">
+
+        <ListPreference
+            android:key="edit_language"
+            android:title="@string/edit_language"
+            android:summary="@string/edit_language_summary">
+        </ListPreference>
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/mute">
+
+        <CheckBoxPreference
+            android:key="edit_mute"
+            android:title="@string/edit_mute"
+            android:summary="@string/edit_mute_summary">
+        </CheckBoxPreference>
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/signed_in">
+
+        <CheckBoxPreference
+            android:key="edit_signed_in"
+            android:title="@string/edit_signed_in"
+            android:summary="@string/edit_signed_in_summary">
+        </CheckBoxPreference>
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

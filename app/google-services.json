@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "662600812787",
+    "firebase_url": "https://testandpractice-5c0fe.firebaseio.com",
+    "project_id": "testandpractice-5c0fe",
+    "storage_bucket": "testandpractice-5c0fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:662600812787:android:067865f76f5f9bef",
+        "android_client_info": {
+          "package_name": "raistudio.testandpractice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "662600812787-u8f80om75oelof89ha1vtaa3aihonp4k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "raistudio.testandpractice",
+            "certificate_hash": "b60b82fab11b7986172015652c67a079ddac7247"
+          }
+        },
+        {
+          "client_id": "662600812787-ceg0me6ferdsvo5gi3lpbsa61phbtjv0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvw1GC_4JShkZPh2LNkinAszLb-sahsaI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "662600812787-ceg0me6ferdsvo5gi3lpbsa61phbtjv0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
